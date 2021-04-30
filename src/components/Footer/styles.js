@@ -8,7 +8,7 @@ export default makeStyles((theme) => ({
       textAlign: 'center',
       position: 'fixed',
       bottom: 0,
-      marginTop: '5%',
+      marginTop: '15vh',
       textDecoration: 'none'
       
       // marginTop: 'calc(5% + 60px)'
