@@ -4,6 +4,8 @@ import Grid from '@material-ui/core/Grid';
 import Product from './Product/Product';
 import useStyles from './styles';
 
+// import { connect } from 'react-redux';
+
 const Products = ({ products, onAddToCart }) => {
     const classes = useStyles();
 
@@ -20,5 +22,13 @@ const Products = ({ products, onAddToCart }) => {
     </main>
     );
 };
+
+// const mapStateToProps = state => {
+//     return {
+//         products: state.shop.products,
+//     };
+// };
+
+// export default connect(mapStateToProps)(Products);
 
 export default Products;
