@@ -20,22 +20,35 @@ export default makeStyles((theme) => ({
     },
 
     button: {
-      minWidth: '150px',
+      minWidth: '100px',
+      maxWidth: '300px',
       color: '#fff',
       backgroundColor: 'rgba(0, 0, 0, 0.6)',
       fontSize: '36px',
       borderRadius: '15px',
       textTransform: 'none',
-      marginLeft: '15%' 
+      marginLeft: '15%',
+      [theme.breakpoints.down('sm')] : {
+        marginLeft: '0',
+        marginTop: '7%',
+        textAlign: 'center',
+        minWidth: '50px',
+        fontSize: '24px',
+      }
     },
 
     hero: {
       position: "absolute",
-      top: '30%',
+      top: '22%',
       left: '33%',
       width: '40vw',
       fontFamily: 'Roboto',
       color: '#fff',
+      [theme.breakpoints.down('sm')] : {
+        left: '13%',
+        width: '80vw',
+        textAlign: 'center'
+      }
     },
 
     heroColor: {

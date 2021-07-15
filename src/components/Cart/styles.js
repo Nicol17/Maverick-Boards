@@ -1,10 +1,15 @@
-
 import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   title: {
     marginTop: '5%',
+    fontSize: '42px',
+    [theme.breakpoints.down('sm')] : {
+      fontSize: '36px',
+      marginBottom: '20px',
+      marginTop: '10%',
+    }
   },
   emptyButton: {
     minWidth: '150px',
@@ -26,5 +31,16 @@ export default makeStyles((theme) => ({
     marginTop: '10%',
     width: '100%',
     justifyContent: 'space-between',
+    [theme.breakpoints.up('xs')] : {
+      marginBottom: '40px'
+    }
   },
+  body: {
+    minHeight: '100vh'
+  },
+
+  cartCard: {
+    width: '30vw',
+    height: '20vh'
+  }
 }));

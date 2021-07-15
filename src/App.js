@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { commerce } from './lib/commerce';
-import { Homepage, Products, Navbar, Footer, Cart, Checkout } from './components';
+import { Homepage, Products, Navbar, Footer, Cart, Checkout, ProductPage } from './components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const App = () => {
@@ -75,6 +75,10 @@ const App = () => {
       <Switch>
         <Route exact path="/products">
           <Products  products={products} onAddToCart={handleAddToCart}/>
+        </Route>
+
+        <Route exact path="/productPage">
+          <ProductPage products={products}/>
         </Route>
 
         <Route exact path="/">

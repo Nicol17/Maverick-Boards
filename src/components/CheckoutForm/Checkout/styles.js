@@ -8,6 +8,7 @@ export default makeStyles((theme) => ({
   layout: {
     marginTop: '5%',
     width: 'auto',
+    minHeight: '100vh',
     marginLeft: theme.spacing(2),
     marginRight: theme.spacing(2),
     [theme.breakpoints.up(600 + theme.spacing(2) * 2)]: {
@@ -49,4 +50,7 @@ export default makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  body: {
+    minHeight: '100vh'
+  }
 }));

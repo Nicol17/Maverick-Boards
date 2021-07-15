@@ -66,4 +66,23 @@ export default makeStyles((theme) => ({
       width: '20ch',
     },
   },
+
+  list: {
+    listStyle: 'none',
+    display: 'flex',
+    justifyContent: 'center',
+    [theme.breakpoints.down('xs')]: {
+      display: 'none',
+    },
+  },
+  listItem: {
+    padding: '5px 20px',
+    fontSize: '18px',
+    display: 'flex'
+  },
+  icon: {
+    textDecoration: 'none',
+    color: '#000',
+    alignItems: 'center'
+  }
 }));

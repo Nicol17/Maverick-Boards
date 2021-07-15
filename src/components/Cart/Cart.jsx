@@ -37,14 +37,13 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
 
             </div>
         </div>
-        <Footer />
         </>
     );
 
     return (
-    <Container>
+    <Container className={classes.body}>
         <div className={classes.toolbar} />
-        <Typography className={classes.tittle} variant="h3" gutterBottom>Your Shopping Cart</Typography>
+        <Typography className={classes.title} variant="h3" gutterBottom>Your Shopping Cart</Typography>
         { !cart.total_items ? <EmptyCart /> : <FilledCart /> }
     </Container>
     )
