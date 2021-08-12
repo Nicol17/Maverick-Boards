@@ -23,8 +23,11 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.up('xs')] : {
       height: '60vh',
     },
-    [theme.breakpoints.up('sm')] : {
-      height: '45vh',
+    [theme.breakpoints.between('sm', 'md')] : {
+      height: '50vh',
+    },
+    [theme.breakpoints.up('lg')] : {
+      height: '52vh',
     }
   },
   cartItemTitle: {

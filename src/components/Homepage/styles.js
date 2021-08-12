@@ -34,6 +34,13 @@ export default makeStyles((theme) => ({
         textAlign: 'center',
         minWidth: '50px',
         fontSize: '24px',
+      },
+      [theme.breakpoints.down('lg')] : {
+        marginLeft: '0',
+        marginTop: '5%',
+        textAlign: 'center',
+        minWidth: '50px',
+        fontSize: '28px',
       }
     },
 
@@ -47,6 +54,11 @@ export default makeStyles((theme) => ({
       [theme.breakpoints.down('sm')] : {
         left: '13%',
         width: '80vw',
+        textAlign: 'center'
+      },
+      [theme.breakpoints.down('lg')] : {
+        left: '20%',
+        width: '60vw',
         textAlign: 'center'
       }
     },

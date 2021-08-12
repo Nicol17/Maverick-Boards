@@ -31,8 +31,16 @@ export default makeStyles((theme) => ({
     marginTop: '10%',
     width: '100%',
     justifyContent: 'space-between',
-    [theme.breakpoints.up('xs')] : {
-      marginBottom: '40px'
+    [theme.breakpoints.down('sm')] : {
+      margin: '15% 0'
+    },
+    [theme.breakpoints.up('lg')] : {
+      marginTop: '7%',
+      marginBottom: '2%'
+    },
+    [theme.breakpoints.between('sm', 'md')] : {
+      marginTop: '25%',
+      marginBottom: '2%'
     }
   },
   body: {
